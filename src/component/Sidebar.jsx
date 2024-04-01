@@ -11,10 +11,10 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 const sideBar = [
     { menuName: 'Dashboard', icon: <RiSettingsLine size={20} />, link: "/#" },
-    { menuName: 'Product', icon: <MdOutlineProductionQuantityLimits size={20} />, link: "/product" },
-    { menuName: 'Customers', icon: <BsPersonSquare size={20} />, link: "/customers" },
-    { menuName: 'Income', icon: <IoWalletOutline size={20} />, link: "/income" },
-    { menuName: 'Promote', icon: <LuBadgePercent size={20} />, link: "/promote" },
+    { menuName: 'Product', icon: <MdOutlineProductionQuantityLimits size={20} />, link: "/#" },
+    { menuName: 'Customers', icon: <BsPersonSquare size={20} />, link: "/#" },
+    { menuName: 'Income', icon: <IoWalletOutline size={20} />, link: "/#" },
+    { menuName: 'Promote', icon: <LuBadgePercent size={20} />, link: "#" },
     { menuName: 'Help', icon: <LuBadgeHelp size={20} />, link: "/help" },
 ];
 

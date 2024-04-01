@@ -10,8 +10,8 @@ import { SlGraph } from "react-icons/sl";
 
 const statusData = [
   { icon: <PiCurrencyCircleDollarLight color="#228b22" />, bgColor: "#DAF7A6", title: 'Earning', amount: '$198K', change: `+37.8%  <b>this month`, trendColor: '#228b22' },
-  { icon: <PiNotepad color="purple" />, bgColor: "#FAE6FA", title: 'Orders', amount: '$2.4K', change: '-2% <b>this month', trendColor: 'red' },
-  { icon: <CiWallet color="blue" />, bgColor: "#c6e6fb45", title: 'Balance', amount: '$198K', change: '-2% <b>this month', trendColor: 'red' },
+  { icon: <PiNotepad color="purple" />, bgColor: "#FAE6FA", title: 'Orders', amount: '$2.4K', change: '-2% <b>this month', trendColor: '#fd5c63' },
+  { icon: <CiWallet color="blue" />, bgColor: "#c6e6fb45", title: 'Balance', amount: '$198K', change: '-2% <b>this month', trendColor: '#fd5c63' },
   { icon: <SlGraph color="#E8AC41" />, bgColor: "#FFFFE0", title: 'Total Sales', amount: '$89K', change: '+11% <b>this month', trendColor: 'green' }
 ];
 
