@@ -39,16 +39,16 @@ const BarComponent = () => {
     }, []);
 
     return (
-        <div className="grid lg:grid-cols-6 grid-cols-1 h-auto gap-2 my-12">
-            <div className="bar-container bg-white rounded-md border w-auto lg:col-span-4 px-4">
+        <div className="grid lg:grid-cols-6 grid-cols-1 h-auto gap-2 my-12 ">
+            <div className="bar-container bg-white rounded-md border w-auto lg:col-span-4 px-4 shadow-xl">
                 <div className="flex flex-row justify-between py-3">
                     <div className='earning'>
                         <h3 className='text-base font-bold font-openSans'>Overview</h3>
                         <p className='text-sm font-normal font-openSans text-gray-600'>Monthly Earning</p>
                     </div>
                     <div className='text-sm text-gray-500'>
-                        <select className='bg-slate-100 text-sm rounded-md px-2 py-1'>
-                            <option value="quarterly">Quarterly</option>
+                        <select className='bg-slate-100 text-sm rounded-md px-2 py-1 focus:outline-none '>
+                            <option className='' value="quarterly">Quarterly</option>
                             <option value="yearly">Yearly</option>
                             <option value="annual">Annual</option>
                         </select>
@@ -63,10 +63,10 @@ const BarComponent = () => {
                     </BarChart>
                 </ResponsiveContainer>
             </div>
-            <div className='bg-white rounded-md border lg:col-span-2 col-span-1 px-4'>
+            <div className='bg-white rounded-md border lg:col-span-2 col-span-1 px-4 shadow-xl'>
                 <div className="customer-container py-2">
-                    <h4 className='font-bold text-lg'>Customers</h4>
-                    <p className='font-normal text-sm text-gray-500'>Customers that Buy Products</p>
+                    <h4 className='font-bold text-lg font-openSans'>Customers</h4>
+                    <p className='font-normal text-sm text-gray-500 font-openSans'>Customers that Buy Products</p>
                 </div>
                 <Progress />
             </div>

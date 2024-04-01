@@ -4,11 +4,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        openSans: 'Roboto',
-        lato:'Nunito',
+        openSans: ["Roboto",'sans-serif'],
+        lato:['Nunito','sans-serif'],
       },
-      color:{
-        hoverSidebar:"#4747a1"
+      backgroundColor:{
+        hoverSidebar:"#7978e9",
+        hoverCard:"#7da0fa"
       }
     },
   },

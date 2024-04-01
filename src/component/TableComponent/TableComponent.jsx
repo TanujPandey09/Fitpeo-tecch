@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 // Table Head Component
 const TableHead = () => {
     return (
-        <thead className="text-sm font-bold text-gray-900 capitalize bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
+        <thead className="text-sm font-bold text-gray-900 capitalize font-openSans bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr className='bg-hoverSidebar text-white'>
                 <th scope="col" className="p-4 " >
                     Product Name
                 </th>
@@ -65,7 +65,7 @@ const Table = ({ data }) => {
 );
 
     return (
-        <div className="relative overflow-x-hidden shadow-md sm:rounded-lg ">
+        <div className="relative overflow-x-hidden shadow-lg sm:rounded-lg ">
             <div className="flex items-center justify-between flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 py-4 px-4 bg-white dark:bg-gray-900">
                 <div className="product_header">
                     <h6 className='text-2xl font-openSans font-extrabold'>Product Sell</h6>

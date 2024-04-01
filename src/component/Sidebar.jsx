@@ -11,10 +11,10 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 const sideBar = [
     { menuName: 'Dashboard', icon: <RiSettingsLine size={20} />, link: "/#" },
-    { menuName: 'Product', icon: <MdOutlineProductionQuantityLimits size={20} />, link: "/" },
-    { menuName: 'Customers', icon: <BsPersonSquare size={20} />, link: "/#" },
-    { menuName: 'Income', icon: <IoWalletOutline size={20} />, link: "/#" },
-    { menuName: 'Promote', icon: <LuBadgePercent size={20} />, link: "#" },
+    { menuName: 'Product', icon: <MdOutlineProductionQuantityLimits size={20} />, link: "/product" },
+    { menuName: 'Customers', icon: <BsPersonSquare size={20} />, link: "/customers" },
+    { menuName: 'Income', icon: <IoWalletOutline size={20} />, link: "/income" },
+    { menuName: 'Promote', icon: <LuBadgePercent size={20} />, link: "/promote" },
     { menuName: 'Help', icon: <LuBadgeHelp size={20} />, link: "/help" },
 ];
 
@@ -22,7 +22,7 @@ const sideBar = [
 export default function SidebarItem({ icon, menuName, link }) {
     const location = useLocation();
     return (<>
-        <li className="flex flex-row py-2 my-2 items-center justify-between hover: cursor-pointer rounded-md text-sm font-openSans w-full">
+        <li className="flex flex-row py-2 my-2 items-center justify-between hover:bg-hoverSidebar hover:cursor-pointer rounded-md text-sm font-openSans w-full">
             <a className="flex flex-row items-center gap-2 px-4" href={link}>
                 {icon}
                 <span>{menuName}</span>
@@ -30,7 +30,7 @@ export default function SidebarItem({ icon, menuName, link }) {
             </a>
             {location.pathname === link ? null : (
                 <a href={link}>
-                    <RxCaretRight size={20} className='fle' />
+                    <RxCaretRight size={20} className='flex' />
                 </a>
             )}
 
@@ -59,7 +59,7 @@ export const Sidebar = () => (
                     </div>
                 </div>
             </div>
-            <div className=' text-white account-setting flex flex-row justify-between bg-slate-600 items-center rounded-md shadow-sm px-3 mb-10 py-1 mx-2 font-openSans cursor'>
+            <div className=' text-white account-setting flex flex-row justify-between bg-hoverSidebar items-center rounded-md shadow-sm px-3 mb-10 py-1 mx-2 font-openSans cursor'>
                 <img src='https://picsum.photos/id/237/200/300' className='w-10 h-10 rounded-full' />
                 <div className='flex flex-col text-sm text-normal'>
                     <p>Evan</p>

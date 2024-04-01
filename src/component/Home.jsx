@@ -12,7 +12,7 @@ const Home = () => {
         <>
             <Header />
             <Status />
-            < ChartComponent/>
+            <ChartComponent/>
             <ProductList/>
         </>
     )
