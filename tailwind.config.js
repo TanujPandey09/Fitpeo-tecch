@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         openSans: 'Roboto',
         lato:'Nunito',
+      },
+      color:{
+        hoverSidebar:"#4747a1"
       }
     },
   },

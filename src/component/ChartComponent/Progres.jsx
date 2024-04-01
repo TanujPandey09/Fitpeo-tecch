@@ -20,16 +20,16 @@ const Progress = () => {
         afterDatasetsDraw(chart, args, options) {
             const { ctx, chartArea: { width, height } } = chart;
             ctx.save();
-            ctx.font = 'bold 30px Arial';
+            ctx.font = 'bold 30px Roboto';
             ctx.fillStyle = '#000';
             ctx.textAlign = "center";
             ctx.fillText("65%", width / 2, height / 2.2); // Adjusted center position
             ctx.restore();
 
-            ctx.font = 'bold 18px Lato'; // Adjusted font weight
+            ctx.font = 'bold 18px Nunito'; // Adjusted font weight
             ctx.fillStyle = '#000';
             ctx.textAlign = "center";
-            ctx.fillText("Total New", width / 2, height / 1.85); // Adjusted position
+            ctx.fillText("Total New", width / 2, height / 1.82); // Adjusted position
             ctx.fillText("Customers", width / 2, height / 1.6); // Adjusted position
         }
     };
@@ -52,6 +52,7 @@ const Progress = () => {
             data: {
                 datasets: [{
                     data: [
+                        
                         25, 45, 45
                     ],
                     backgroundColor: [
@@ -61,9 +62,11 @@ const Progress = () => {
             }
         });
 
+        
+
     }, []);
 
-    return <canvas ref={chartRef} style={{ width: "300px", height: "auto", background: "#fff", borderRadius: "50%", }} />;
+    return <canvas ref={chartRef} style={{ width: "100px", height: "auto", background: "#fff", borderRadius: "50%", }} />;
 };
 
 export default Progress;

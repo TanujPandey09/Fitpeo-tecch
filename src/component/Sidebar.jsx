@@ -11,7 +11,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 const sideBar = [
     { menuName: 'Dashboard', icon: <RiSettingsLine size={20} />, link: "/#" },
-    { menuName: 'Product', icon: <MdOutlineProductionQuantityLimits size={20} />, link: "/#" },
+    { menuName: 'Product', icon: <MdOutlineProductionQuantityLimits size={20} />, link: "/" },
     { menuName: 'Customers', icon: <BsPersonSquare size={20} />, link: "/#" },
     { menuName: 'Income', icon: <IoWalletOutline size={20} />, link: "/#" },
     { menuName: 'Promote', icon: <LuBadgePercent size={20} />, link: "#" },
@@ -22,7 +22,7 @@ const sideBar = [
 export default function SidebarItem({ icon, menuName, link }) {
     const location = useLocation();
     return (<>
-        <li className="flex flex-row py-2 my-2 items-center justify-between hover:bg-slate-700 cursor-pointer rounded-md text-sm font-openSans w-full">
+        <li className="flex flex-row py-2 my-2 items-center justify-between hover: cursor-pointer rounded-md text-sm font-openSans w-full">
             <a className="flex flex-row items-center gap-2 px-4" href={link}>
                 {icon}
                 <span>{menuName}</span>
